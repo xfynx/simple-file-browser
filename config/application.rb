@@ -28,5 +28,9 @@ module SimpleFileBrowser
 
     # жёстко задаём путь, выше которого не уйти
     config.file_browser_root = "#{Rails.root}/public"
+
+    config.react.server_renderer_options = {
+        files: ["components.js"], # files to load for prerendering
+    }
   end
 end
