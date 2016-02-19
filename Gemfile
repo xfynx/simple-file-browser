@@ -12,6 +12,7 @@ gem 'react-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 
+gem 'pg', '0.15.1'
 gem 'puma'
 
 group :development, :test do
