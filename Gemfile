@@ -20,3 +20,8 @@ group :development do
   gem 'web-console', '~> 2.0'
   gem 'spring'
 end
+
+group :production do
+  gem 'rails_12factor', '0.0.2'
+  gem 'newrelic_rpm'
+end
