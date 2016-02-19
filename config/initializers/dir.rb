@@ -1,0 +1,1 @@
+Dir.chdir(Rails.application.config.file_browser_root)

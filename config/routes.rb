@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+
+  root 'file_browser#index'
+  get 'file_browser/goto'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

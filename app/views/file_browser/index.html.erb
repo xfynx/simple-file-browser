@@ -1,0 +1,9 @@
+<p><%= @current_dir %></p>
+<br/>
+
+<% @dirs.each do |entry| %>
+    <p><b><%= File.basename(entry) %></b></p>
+<% end %>
+
+
+<%= react_component 'Filelist', { data: @files } %>
