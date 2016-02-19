@@ -8,9 +8,8 @@
       className: 'filelist'
       React.DOM.h2
         className: 'title'
-        'File list'
       React.DOM.div
         className: ''
-        React.DOM.p null,
+        React.DOM.div null,
           for entry in @state.entries
-            React.createElement Entry, key: entry, entry: entry
+            React.createElement Entry, key: entry, entry: entry, is_directory: false

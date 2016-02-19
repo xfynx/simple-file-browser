@@ -23,6 +23,10 @@ module SimpleFileBrowser
     # Do not swallow errors in after_commit/after_rollback callbacks.
     config.active_record.raise_in_transactional_callbacks = true
 
+    # подгружаем утилиты из lib/utils
+    config.autoload_paths += %W(#{config.root}/lib/utils)
+
+    # жёстко задаём путь, выше которого не уйти
     config.file_browser_root = "#{Rails.root}/public"
   end
 end
